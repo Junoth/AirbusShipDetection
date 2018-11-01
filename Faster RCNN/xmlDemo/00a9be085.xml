@@ -1,0 +1,38 @@
+<annotation>
+	<folder>pic</folder>
+	<filename>00a9be085.jpg</filename>
+	<path>E:\BU\EC 601 product Design\airbus ship detection\pic\00a9be085.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>768</width>
+		<height>768</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>270</ymin>
+			<xmax>104</xmax>
+			<ymax>361</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>ship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>600</xmin>
+			<ymin>639</ymin>
+			<xmax>668</xmax>
+			<ymax>711</ymax>
+		</bndbox>
+	</object>
+</annotation>

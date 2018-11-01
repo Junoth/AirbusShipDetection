@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train1</folder>
+	<filename>000fd9827.jpg</filename>
+	<path>E:/BU/EC 601 product Design/airbus ship detection/train1/000fd9827.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>768</width>
+		<height>768</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>49</xmin>
+			<ymin>180</ymin>
+			<xmax>122</xmax>
+			<ymax>283</ymax>
+		</bndbox>
+	</object>
+</annotation>
