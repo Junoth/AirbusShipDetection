@@ -1,0 +1,2 @@
+## this is the demo of xml files which is the input of the fasterRCNN network.
+#### the most important information are two position: the left-up corner and the right-down corner of the square we are going to mark
