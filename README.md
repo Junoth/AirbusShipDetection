@@ -30,9 +30,9 @@ Secondly,we use **sklearn** library to split dataset as train set and valid set.
   from sklearn.model_selection import train_test_split
 ```
 
-Thirdly,the tool used in the image process part is **Keras**.
+Thirdly,the tool used in the image pre-process part is **Keras**.To build a better model,we use keras to do some process(crop,
 ```python
-
+  from keras.preprocessing.image import ImageDataGenerator
 ```
 
 Transfer Learning
