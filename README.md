@@ -13,9 +13,9 @@ The [dataset](https://www.kaggle.com/c/airbus-ship-detection/data) is given in k
 Data process
 -
 To get the label from the CSV file,we use pandas library to process data.
-'''
+```python
   import pandas as panda
-'''
+```
 
 Transfer Learning
 -
