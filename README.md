@@ -19,11 +19,15 @@ To get the label from the CSV file,we use pandas library to process data.
   masks['path'] = masks['ImageId'].map(lambda x: os.path.join(train_image_dir, x))
 ```
 
-If there is a mask or several marks in an image,then we label this image as 'has ship'.If there is no ship then we label it 
-as 'no ship'
+If there is a mask or several marks in an image,then we label this image as '1'.If there is no ship then we label it 
+as '0'
 
 ```python
-
+  masks['ships'] = masks['EncodedPixels'].map(lambda c_row: 1 if isinstance(c_row, str) else 0)
+  unique_img_ids = masks.groupby('ImageId').agg({'ships': 'sum'}).reset_index()
+  unique_img_ids['has_ship'] = unique_img_ids['ships'].map(lambda x: 1.0 if x>0 else 0.0)
+  unique_img_ids['has_ship_vec'] = unique_img_ids['has_ship'].map(lambda x: [x])
+  masks.drop(['ships'], axis=1, inplace=True)
 ```
 
 Transfer Learning
