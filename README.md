@@ -12,7 +12,7 @@ The [dataset](https://www.kaggle.com/c/airbus-ship-detection/data) is given in k
 
 Data process
 -
-To get the label from the CSV file,we use pandas library to process data.
+Firstly,to get the label from the CSV file,we use pandas library to process data.
 ```python
   import pandas as panda
   masks = pd.read_csv('./train_ship_segmentations_v2.csv')
@@ -28,6 +28,11 @@ as '0'
   unique_img_ids['has_ship'] = unique_img_ids['ships'].map(lambda x: 1.0 if x>0 else 0.0)
   unique_img_ids['has_ship_vec'] = unique_img_ids['has_ship'].map(lambda x: [x])
   masks.drop(['ships'], axis=1, inplace=True)
+```
+
+Secondly,we use sklearn library to split dataset as train set and valid set.
+```python
+
 ```
 
 Transfer Learning
