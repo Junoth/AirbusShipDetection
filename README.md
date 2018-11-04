@@ -15,6 +15,8 @@ Data process
 To get the label from the CSV file,we use pandas library to process data.
 ```python
   import pandas as panda
+  masks = pd.read_csv('./train_ship_segmentations_v2.csv')
+  masks['path'] = masks['ImageId'].map(lambda x: os.path.join(train_image_dir, x))
 ```
 
 Transfer Learning
