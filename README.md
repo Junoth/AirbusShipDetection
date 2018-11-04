@@ -30,9 +30,9 @@ as '0'
   masks.drop(['ships'], axis=1, inplace=True)
 ```
 
-Secondly,we use sklearn library to split dataset as train set and valid set.
+Secondly,we use sklearn library to split dataset as train set and valid set.We use the number of ships in a image to split all images to make sure images are evenly separated into different sets.The train set occupies **70%** and valid set occupies **30%**.
 ```python
-
+  from sklearn.model_selection import train_test_split
 ```
 
 Transfer Learning
