@@ -19,6 +19,13 @@ To get the label from the CSV file,we use pandas library to process data.
   masks['path'] = masks['ImageId'].map(lambda x: os.path.join(train_image_dir, x))
 ```
 
+If there is a mask or several marks in an image,then we label this image as 'has ship'.If there is no ship then we label it 
+as 'no ship'
+
+```python
+
+```
+
 Transfer Learning
 -
 
