@@ -50,6 +50,9 @@ Website
 The [website](http://www.airbusshipdect.online/) for users has been set up.You can upload on this website and it will 
 return the probability of ships.
 
+Flask is the main web frame for this website
+
+![flask](http://flask.pocoo.org/static/logo/flask.png)
 
 
 
