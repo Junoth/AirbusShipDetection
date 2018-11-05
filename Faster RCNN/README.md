@@ -19,6 +19,6 @@
 ####     the process of set the configuration are too much and difficult to describe, so just ignore it here...
 #### 3.Interface of the input picture and the program.
 ####     for the Faster RCNN model, the input have to be the xml file. which have the information of the marked region of training picture. But we don't have it. So we have to use the program(MATLAB and PYTHON) and marked the region mannually to form the xml files. for these two ways, the program is faster but have lower accuracy(because there are too many conbinations of ship in the picture, program always can hardly mark the region very accurate :( .),but the mannually label and mark the region tooks a longer time. 
-####     after solve the problem of picture, we build some folders and files for accessing the model,this is important if use the open source code of Faster RCNN(it's a large project!). which are upload to the github.
+####     after solving the problem of picture, we build some folders and files for accessing the model,this is important if use the open source code of Faster RCNN(it's a large project!). which are upload to the github.
 
 ### ... to be continued
