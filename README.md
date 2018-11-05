@@ -50,11 +50,9 @@ Website
 The [website](http://www.airbusshipdect.online/) for users has been set up.You can upload on this website and it will 
 return the probability of ships.
 
-Flask is the main web frame for this website
+Flask is the main web frame for this website.Flask is a microframework for Python.It has two libraries:Werkzeug and Jinja 2.
 
 ![flask](http://flask.pocoo.org/static/logo/flask.png)
-
-Flask is a microframework for Python.It has two libraries:Werkzeug and Jinja 2.
 
 To setup flask,you need the command:
 ```
