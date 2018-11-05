@@ -64,3 +64,4 @@ Then,it can be easily used in the app:
 from flask import Flask
 ```
 
+The web server is Nginx,which is a light-weight HTTP and reverse proxy server and a generic TCP/UDP proxy server.
