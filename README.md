@@ -59,4 +59,8 @@ To setup flask,you need the command:
 pip install Flask
 ```
 
+Then,it can be easily used in the app:
+```
+from flask import Flask
+```
 
