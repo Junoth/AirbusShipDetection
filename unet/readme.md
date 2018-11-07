@@ -7,18 +7,18 @@ to run the whole program, just run the seperate parts on kaggle
 
 Model Parameters
 -
-<br>
+
 ![](https://github.com/SandyHao/AirbusShipDetection/blob/patch-2/unet/1.JPG)
-<br>
+
 Decode
 -
-<br>
+
 transfer the label from .csv file to mask images
 ![](https://github.com/SandyHao/AirbusShipDetection/blob/patch-2/unet/2.JPG)
 
 Split dataset
 -
-<br>
+
 Set all the data to train and validation set.<br>
 Besides, count the number of images that have ships.<br>
 
