@@ -47,6 +47,12 @@ Based on keras VGG19.<br>
 
 Unet
 -
+The main part of program is from kaggle: https://www.kaggle.com/hmendonca/u-net-model-with-submission# <br>
+The whole program can be runned seperately on kaggle.<br>
+* decode & make mask
+* seperate dataset & do augment to images
+* build & train model
+* output prediction
 
 Faster_RCNN
 -
