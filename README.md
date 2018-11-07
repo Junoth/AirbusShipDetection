@@ -10,6 +10,9 @@ At last,we need to design an interface for users to upload images and dectect sh
 
 The [dataset](https://www.kaggle.com/c/airbus-ship-detection/data) is given in kaggle website.If you have interests,you can go to the website and download it.Labels of train set images are stored in a CSV file.There are **231723** masks in all train images,which means the ship number is also **231723**.
 
+(Milestone update: 1.Use VGG19 to predict posibility of ship exsiting; 2. Use unet to predict ship location; 3. Build website interface)
+(Short-term Goals: 1.Use fast RCNN to detect ships; 2. Change and improve prarmeters in unet; 3. Improve website)
+
 Data process
 -
 Firstly,to get the label from the CSV file,we use **pandas** library to process data.
