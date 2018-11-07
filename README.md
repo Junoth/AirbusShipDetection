@@ -41,9 +41,9 @@ Transfer Learning
 VGG19
 -
 Based on keras VGG19.<br>
-*decode data from kaggle -> get mask of ship location on the pictures -> combine labels and images together to be the dataset.<br>
-*do augment to get more complex dataset -> set part of the parameters used for training
-*remove the last prediction layer from original VGG19 network -> instead, use a simple layer to predict only posibility
+**decode data from kaggle -> get mask of ship location on the pictures -> combine labels and images together to be the dataset.<br>
+**do augment to get more complex dataset -> set part of the parameters used for training<br>
+**remove the last prediction layer from original VGG19 network -> instead, use a simple layer to predict only posibility
 
 Unet
 -
