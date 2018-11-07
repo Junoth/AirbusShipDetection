@@ -38,6 +38,9 @@ Thirdly,the tool used in the image pre-process part is **Keras**.To build a bett
 Transfer Learning
 -
 
+VGG19
+-
+
 Unet
 -
 
