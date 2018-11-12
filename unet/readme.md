@@ -39,9 +39,8 @@ This is argment step. We do flip, rotation, stretch or other operation to enlarg
 
 Build Model
 -
-
-Build several layers of convolution layers, pooling layers, fully connection layers......<br>
-Get the weights of the network.<br>
+Using unet model to train all the images.<br>
+Set eariler stopping condition.<br>
 Train the model, let the training processing break down when loss is low enough.<br>
 ![](https://github.com/SandyHao/AirbusShipDetection/blob/patch-2/unet/10_1.JPG)
 Print out loss and accuracy.<br>
