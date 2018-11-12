@@ -25,7 +25,7 @@ Split dataset
 -
 
 Set all the data to train and validation set.<br>
-Besides, count the number of images that have ships.<br>
+20% of all the images are selected to be validation dataset.<br>
 
 Combination mask with original pictures
 -
