@@ -38,4 +38,8 @@
 ### Training:
 #### 500 iterations' loss:
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/loss-500.PNG)
+#### 1000 iterations' loss:
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/loss-1000.PNG)
+#### 1000 iterations prediction demo
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster1000ite.jpg)
 ### ... to be continued
