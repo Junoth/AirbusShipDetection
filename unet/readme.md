@@ -42,7 +42,8 @@ Build Model
 Using unet model to train all the images.<br>
 Set eariler stopping condition.<br>
 Train the model, let the training processing break down when loss is low enough.<br>
-If the loss is not satisfiable, then change the learning rate.
+If the loss is not satisfiable, then change the learning rate.<br>
+loss=IoU, metrics=['binary_accuracy']<br>
 ![](https://github.com/SandyHao/AirbusShipDetection/blob/patch-2/unet/10_1.JPG)
 Print out loss and accuracy.<br>
 ![](https://github.com/SandyHao/AirbusShipDetection/blob/patch-2/unet/11loss.JPG)
