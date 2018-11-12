@@ -42,4 +42,6 @@
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/loss-1000.PNG)
 #### 1000 iterations prediction demo
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster1000ite.jpg)
+#### 1000 iterations prediction demo2
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster1000ite2.jpg)
 ### ... to be continued
