@@ -13,10 +13,10 @@ Model Parameters
 Decode
 -
 
-transfer the label from .csv file to mask images<\br>
-Use rel-mask to decode the data from .csv<\br>
-The first column means the name of images, the second column express the pixel with ship in the images.<\br>
-Two number are for a group, the first one means the start pixel of a column, the second one means how many pixel continus represent ship.<\br> 
+transfer the label from .csv file to mask images<br>
+Use rel-mask to decode the data from .csv<br>
+The first column means the name of images, the second column express the pixel with ship in the images.<br>
+Two number are for a group, the first one means the start pixel of a column, the second one means how many pixel continus represent ship.<br> 
 ![](https://github.com/SandyHao/AirbusShipDetection/blob/patch-2/unet/2.JPG)
 
 Split dataset
