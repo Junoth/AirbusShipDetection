@@ -3,7 +3,9 @@ Unet Ship Location Detection
 
 the main part of program is from kaggle: https://www.kaggle.com/hmendonca/u-net-model-with-submission# <br>
 <br>
-to run the whole program, just run the seperate parts on kaggle
+to run the whole program, just run the seperate parts on kaggle<br>
+Using Iou to be the evaluation function, which usually has a thresold value range from 0.3-0.5.<br>
+This function compares the prediction area with the real area. When the value is larger than the set thresold value, then the area is reconginized as a valid result.
 
 Model Parameters
 -
