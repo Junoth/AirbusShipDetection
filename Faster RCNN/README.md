@@ -8,7 +8,10 @@
 #### Faster RCNN was come up on 2015, here's the paper:
 #### S.Ren K.He,R.Girshick and J.Sun.Faster RCNN:Towards Real-Time Object Detection with Region Proposal Networks:https://arxiv.org/pdf/1506.01497.pdf
 #### for Faster RCNN network, at first, we can simply see this model as RPNs(Region Proposal Network)+Fast RCNN.To generate region proposals, we slide a small network over the convolutional feature map output by the last shared convolutional layer. This smallnetwork  takes as input an n × n spatial window of the input convolutional feature map. 
-~[](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/2.PNG)
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/2.PNG)
+
+#### the loss it uses:
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/faster%20rcnn%20loss.PNG)
 ### Why we choose Faster RCNN
 #### we compared several models of object detection. YOLO, RCNN, FAST RCNN and so on. their generic performance are as picture below
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/%E5%90%84%E4%BD%8D%E7%BD%AE%E8%AF%86%E5%88%AB%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83.jpg)
