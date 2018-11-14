@@ -22,7 +22,11 @@ from flask import Flask
 ### Web Server
 The web server is **[Nginx](https://www.nginx.com/)**,which is a light-weight HTTP and reverse proxy server and a generic TCP/UDP proxy server.
 
-For linux system,you can use the command:
+For Linux system,you can use the command:
 ```
 sudo apt-get install nginx
+```
+For MAC system
+```
+brew install nginx
 ```
