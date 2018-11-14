@@ -1,6 +1,9 @@
 Website
 -
 
+### Virtual environment(Recommended)
+Python virtual environments are used to isolate package installation from the system.Configure your virtual environment with the tutorial in the [virtualenv](https://virtualenv.pypa.io/en/latest) website. 
+
 ### Frame
 The **[website](http://www.airbusshipdect.online/)** for users has been set up.You can upload on this website and it will 
 return the probability of ships.
