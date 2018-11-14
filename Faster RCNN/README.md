@@ -48,6 +48,6 @@
 #### So later I made two main changes to our program. First, I modified the size of the layer after VGGnet, which originally is a 512 vector, but for our detection, we only need two classes:background and ship, so I try to drop some information to make the imformation contains ship more explicitly. Second, I modified the threshhold which determine the background and the frountground, originally, it's 0.5. And now I modified it to 0.6 and 0.4. which means, only if the IOU is larger than 0.6 we will say that this anchor contains a ship and if it's less than 0.4 we will think it as a background, otherwise we will just drop it, it's useless from my perspective.
 #### And this is the result after modified(we also increase the iteration of the training)
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2000iter3.jpg)
-![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2000iter4.jpg)
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2500iter3.jpg)
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2500iter4.jpg)
 ### ... to be continued
