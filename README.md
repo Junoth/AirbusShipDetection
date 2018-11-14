@@ -3,7 +3,7 @@ Airbus Ship Detection Challenge
 
 This is a [competition](https://www.kaggle.com/c/airbus-ship-detection) in kaggle.
 
-                ![kaggle](https://storage.googleapis.com/kaggle-media/competitions/Airbus/ships.jpg)
+![kaggle](https://storage.googleapis.com/kaggle-media/competitions/Airbus/ships.jpg)
 
 The first step in this project is to find whether there is a ship in an image.Secondly,we need to mark the location of ships.
 At last,we need to design an interface for users to upload images and dectect ships.
