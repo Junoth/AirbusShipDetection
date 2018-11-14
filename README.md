@@ -63,27 +63,3 @@ Faster RCNN is one of the most efficient and accurate model of object detection.
 
 the code we use to accomplish Faster RCNN can be found here:
 https://github.com/dBeker/Faster-RCNN-TensorFlow-Python3.5
-
-Website
--
-
-### Frame
-The **[website](http://www.airbusshipdect.online/)** for users has been set up.You can upload on this website and it will 
-return the probability of ships.
-
-**Flask** is the main web frame for this website.Flask is a microframework for Python with two libraries:Werkzeug and Jinja 2.
-
-![flask](http://flask.pocoo.org/static/logo/flask.png)
-
-To setup flask,you need the command:
-```
-pip install Flask
-```
-
-Then,it can be easily used in the app:
-```
-from flask import Flask
-```
-
-### Web Server
-The web server is **Nginx**,which is a light-weight HTTP and reverse proxy server and a generic TCP/UDP proxy server.
