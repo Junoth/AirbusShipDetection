@@ -6,6 +6,11 @@ Python virtual environments are used to isolate package installation from the sy
 
 with the tutorial in the [virtualenv](https://virtualenv.pypa.io/en/latest) website. 
 
+If your virtualenv file name is venv,use the command below to turn into virtual environment.
+```
+. venv/bin/activate
+```
+
 ### Frame
 The **[website](http://www.airbusshipdect.online/)** for users has been set up.You can upload on this website and it will 
 return the probability of ships.
