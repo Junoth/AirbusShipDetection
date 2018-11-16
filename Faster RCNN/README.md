@@ -22,14 +22,17 @@
 #### 1.using our own build model or vgg19 as a embed model of faster RCNN to train the data
 #### 2.Set the configuration:
 ####     enviroment :
--           CPU：G1050ti
--           system:win10,
--           language: python3.5 
--           tools:coco, pycharm,tensorflow
+
+-        CPU：G1050ti
+-        system:win10,
+-        language: python3.5 
+-        tools:coco, pycharm,tensorflow
+
 ####     the process of set the configuration are too much and difficult to describe, so just ignore it here...
 #### 3.Interface of the input picture and the program.
--     for the Faster RCNN model, the input have to be the xml file. which have the information of the marked region of training picture. But we don't have it. So we have to use the program(MATLAB and PYTHON) and marked the region mannually to form the xml files. for these two ways, the program is faster but have lower accuracy(because there are too many conbinations of ship in the picture, program always can hardly mark the region very accurate :( .),but the mannually label and mark the region tooks a longer time. 
--     after solving the problem of picture, we build some folders and files for accessing the model,this is important if use the open source code of Faster RCNN(it's a large project!). which are upload to the github.
+
+- for the Faster RCNN model, the input have to be the xml file. which have the information of the marked region of training picture. But we don't have it. So we have to use the program(MATLAB and PYTHON) and marked the region mannually to form the xml files. for these two ways, the program is faster but have lower accuracy(because there are too many conbinations of ship in the picture, program always can hardly mark the region very accurate :( .),but the mannually label and mark the region tooks a longer time. 
+- after solving the problem of picture, we build some folders and files for accessing the model,this is important if use the open source code of Faster RCNN(it's a large project!). which are upload to the github.
 - after setting the enviroment and file, the folder architecture was as follows:
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/file_arch.PNG)
 
@@ -68,5 +71,7 @@ demo of smaller anchor(the size is 5/8 of the original size):
 <div align=center><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smalleranchor_2000iter3.jpg"/></div>
 
 
-- as you can see within the picture 
+- as you can see from the latest demo above, smaller ships can be detected, and the box which contains the ship is kind of accurate enough now, but however, the larger ship might be recognized as two or more different ships. This means I have set the anchors too small to catch one big ship. So I need to modify the size of it. What's more, the accuracy which shows the probability that there's a ship is lower than before, this is resulting from the change of size of anchors. So the following jobs are to keep changing and finding the best size of anchors and increasing the training dataset.
+
+
 ## ... to be continued
