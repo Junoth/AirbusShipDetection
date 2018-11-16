@@ -47,21 +47,21 @@
 #### from these result above, we can find that there are two problems:First, it's not accurate enough to detect ships in the picture,  it doesn't cover the ship or even cannot detect if it's a ship here. Secend, the probability shows on the circle is relatively low at most of time, the probability always lower than 50%, it's not convincing for users.
 #### So later I made two main changes to our program. First, I modified the size of the layer after VGGnet, which originally is a 512 vector, but for our detection, we only need two classes:background and ship, so I try to drop some information to make the imformation contains ship more explicitly. Second, I modified the threshhold which determine the background and the foreground, originally, it's 0.5. And now I modified it to 0.6 and 0.4. which means, only if the IOU is larger than 0.6 we will say that this anchor contains a ship and if it's less than 0.4 we will think it as a background, otherwise we will just drop it, it's useless from my perspective.
 #### And this is the result after modified(we also increase the iteration of the training)
+
 #### 2000 iterations predection demo:
-![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2000iter3.jpg)
+<div align=left><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2000iter3.jpg"/></div>
 #### 2500 iterations predection demo:
-![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2500iter3.jpg)
-#### 2500 iterations predection demo2:
-![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2500iter4.jpg)
+<div align=right><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2500iter3.jpg"/></div>
+
 #### from the demo above, we can find that the result is more accurate than the result before, the box is can cover most of or even the entire ship, and the probability there is much higher and convincing enough for now. But it still cannot detect all the ships within thee picture, some of them are because of the size of ship, some are because of the color or something else. 
 #### there are several approaches to modify the module: 1. keep adding the number of the training data. the size of the training set is kind of small, so this might be the most significant reason for the accuracy. 2. I wanna try to change the size of the anchor to seperate the foreground and the background, our ship, at most of time, is not that large as the default setting of the Faster RCNN, so I will try to change the size of anchor to make it more suitable for our ship.
 
 -
 demo of smaller anchor(the size is 5/8 of the original size):
-<div align=center><img width="300" height="300" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter1.jpg"/></div>
-<div align=center><img width="300" height="300" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter2.jpg"/></div>
-<div align=center><img width="300" height="300" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter4.jpg"/></div>
-<div align=center><img width="300" height="300" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smalleranchor_2000iter3.jpg"/></div>
+<div align=left><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter1.jpg"/></div>
+<div align=right><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter2.jpg"/></div>
+<div align=left><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter4.jpg"/></div>
+<div align=right><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smalleranchor_2000iter3.jpg"/></div>
 
 
 - as you can see within the picture 
