@@ -56,5 +56,8 @@
 #### from the demo above, we can find that the result is more accurate than the result before, the box is can cover most of or even the entire ship, and the probability there is much higher and convincing enough for now. But it still cannot detect all the ships within thee picture, some of them are because of the size of ship, some are because of the color or something else. 
 #### there are several approaches to modify the module: 1. keep adding the number of the training data. the size of the training set is kind of small, so this might be the most significant reason for the accuracy. 2. I wanna try to change the size of the anchor to seperate the foreground and the background, our ship, at most of time, is not that large as the default setting of the Faster RCNN, so I will try to change the size of anchor to make it more suitable for our ship.
 
-
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter1.jpg)
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter2.jpg)
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter4.jpg)
+![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smalleranchor_2000iter3.jpg)
 ## ... to be continued
