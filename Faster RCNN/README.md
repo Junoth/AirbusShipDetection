@@ -58,8 +58,8 @@
 
 -
 demo of smaller anchor(the size is 5/8 of the original size):
-<div align=left><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter1.jpg"/></div>
-<div align=right><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter2.jpg"/></div>
+<div align=left><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter1.jpg"/><div align=right><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter2.jpg"/></div></div>
+
 <div align=left><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter4.jpg"/></div>
 <div align=right><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smalleranchor_2000iter3.jpg"/></div>
 
