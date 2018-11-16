@@ -60,7 +60,8 @@ The whole program can be runned seperately on kaggle.<br>
 Faster_RCNN
 -
 Faster RCNN is one of the most efficient and accurate model of object detection. So we try to use Faster RCNN to detect where the ship is in the picture the users given.
-here's a little demo of the result:
-![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2000iter2.jpg)
+here's a little demos of the result:
+<div align=center><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smallanchor_2000iter1.jpg"/></div>
+<div align=center><img width="400" height="400" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/picFaster2000iter2.jpg"/></div>
 the code we use to accomplish Faster RCNN can be found here:
 https://github.com/dBeker/Faster-RCNN-TensorFlow-Python3.5
