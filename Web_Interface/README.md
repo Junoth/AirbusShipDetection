@@ -11,7 +11,7 @@ If your virtualenv file name is venv,use the command below to turn into virtual 
 . venv/bin/activate
 ```
 
-### Frame
+### Web Frame
 The **[website](http://www.airbusshipdect.online/)** for users has been set up.You can upload on this website and it will 
 return the probability of ships.
 
@@ -40,3 +40,21 @@ For MAC system
 ```
 brew install nginx
 ```
+
+### WSGI Server
+Use **[uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/#)** as the WSGI server, mainly used as the bridge between flask and nginx. 
+
+Use the command to install uWSGI
+'''
+apt-get install build-essential python
+'''
+
+### Database
+Use **[MongoDB](https://www.mongodb.com/)** as the main database for the website.MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
+
+You can go to the MongoDB website to download and install the MongoDB database.Use /data/db as the storage directory.
+
+### Docker
+To deploy on the server, we use **[Docker](https://www.docker.com/)** to make image of the website.docker is a popular application to help finish agile operations and integrated container security for legacy and cloud-native applications.It helps to deploy the website system quickly and safely.
+
+After building the image,you just need to install docker on the server.Download the image and create the container.
