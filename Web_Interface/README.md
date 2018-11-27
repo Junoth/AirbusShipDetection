@@ -45,9 +45,9 @@ brew install nginx
 Use **[uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/#)** as the WSGI server, mainly used as the bridge between flask and nginx. 
 
 Use the command to install uWSGI
-'''
+```
 apt-get install build-essential python
-'''
+```
 
 ### Database
 Use **[MongoDB](https://www.mongodb.com/)** as the main database for the website.MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
