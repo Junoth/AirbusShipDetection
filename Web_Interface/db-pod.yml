@@ -16,3 +16,4 @@ spec:
         
         volumes:
         - /data/db:/data/db
+        
