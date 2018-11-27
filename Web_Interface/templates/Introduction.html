@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ship Detection</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top" bgcolor="black">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">Airbus Ship Detect</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/Introduction">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/Team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/home">Content</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto" style="text-align: center;">     
+        <p>
+          <h>Data Process</h>
+        </p>
+        <p align="left">
+          Our model is based on a dataset with more than 60000 images.There are total more than 230000 ships on these images.The <a href="https://www.kaggle.com/c/airbus-ship-detection/data">dataset</a> is offered by kaggle.We use <a href="https://pandas.pydata.org/">pandas</a> to get all masks and use <a href="https://scikit-learn.org/stable/">sklearn</a> to split train set and validation set.In order to increase the space diversity,we use the image processing model in <a href="https://keras.io/">keras</a> to pre-process all images like rotating,fliping,etc.
+        </p>
+        <hr />
+        <p>
+          <h>Transfer Learning</h>
+        </p>
+        <p align="left">
+          We use transfer learning to determine the probability of ships.Based on <a href="https://keras.io/">keras</a>,two different models-VGG16 and VGG19 are used as pre-trained model.The prediction layer of these models are deleted and additional layers are added like FC layer and Drop-out layer to develop the performance.
+        </p>
+        <hr />
+        <p>
+          <h>Position detection</h>
+        </p>
+        <p align="left">
+          To get the location of ships in the image,we choose two models:Unet and Faster-RCNN.Images generated from these two models will be included in the final output.
+        </p>
+      </div>
+    </header>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Contact us or get our source codes in the Github</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-paper-plane fa-3x mb-3 sr-contact-4"></i>
+            <p>Github: <a href="https://github.com/Junoth/AirbusShipDetection">Junoth</a></p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com">heathmyh@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/static/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/creative.min.js"></script>
+
+  </body>
+
+</html>
