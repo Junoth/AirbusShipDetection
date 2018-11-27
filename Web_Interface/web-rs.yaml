@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: ReplicaSet
+metadata:
+  name: web
+  labels:
+    name: web
+    app: todoapp
+
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        name: web
+    spec:
+      containers:
+      - name: myweb
+        image: junoth/web:0.1
+        ports:
+        - containerPort: 80
