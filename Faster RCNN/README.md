@@ -80,13 +80,13 @@ demo of smaller anchor(the size is 5/8 of the original size):
 - in our latest result, we trained less than 3000 pictures, and have trained 15,000 iterations and train one picture each iteration, which can be seen as training 15000 pictures as well. And we also modified the threshhold to judge bounding box and the size of the anchor again. result are as follows:
 
 - the accuracy(whether there is a ship within the picture)
--- test on test data(more than 10,000)
+- test on test data(more than 10,000)
 <div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/test accuracy.PNG"/></div>
 -- test on training data(less than 3,000)
-<div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/training accurcy.PNG"/></div>
+<div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/training accuracy.PNG"/></div>
 
 - the accuracy(how many ship in the picture)
--- test on test data(more than 10,000)
+- test on test data(more than 10,000)
 <div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/test accuracy_shipnumber.PNG"/></div>
 
 ## ... to be continued
