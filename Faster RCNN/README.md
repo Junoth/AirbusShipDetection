@@ -11,7 +11,11 @@
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/2.PNG)
 
 #### the loss it uses:
+
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/faster%20rcnn%20loss.PNG)
+<div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smoothl1_loss.PNG"/></div>
+<div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/smoothl1_shape.PNG"/></div>
+
 ### Why we choose Faster RCNN
 - we compared several models of object detection. YOLO, RCNN, FAST RCNN and so on. their generic performance are as picture below
 ![](https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/%E5%90%84%E4%BD%8D%E7%BD%AE%E8%AF%86%E5%88%AB%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83.jpg)
@@ -72,5 +76,17 @@ demo of smaller anchor(the size is 5/8 of the original size):
 
 - as you can see from the latest demo above, smaller ships can be detected, and the box which contains the ship is kind of accurate enough now, but however, the larger ship might be recognized as two or more different ships. This means I have set the anchors too small to catch one big ship. So I need to modify the size of it. What's more, the accuracy which shows the probability that there's a ship is lower than before, this is resulting from the change of size of anchors. So the following jobs are to keep changing and finding the best size of anchors and increasing the training dataset.
 
+#### latest result
+- in our latest result, we trained less than 3000 pictures, and have trained 15,000 iterations and train one picture each iteration, which can be seen as training 15000 pictures as well. And we also modified the threshhold to judge bounding box and the size of the anchor again. result are as follows:
+
+- the accuracy(whether there is a ship within the picture)
+-- test on test data(more than 10,000)
+<div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/test accuracy.PNG"/></div>
+-- test on training data(less than 3,000)
+<div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/training accurcy.PNG"/></div>
+
+- the accuracy(how many ship in the picture)
+-- test on test data(more than 10,000)
+<div align=center><img width="400" height="100" src="https://github.com/Junoth/AirbusShipDetection/blob/master/Faster%20RCNN/test accuracy_shipnumber.PNG"/></div>
 
 ## ... to be continued
