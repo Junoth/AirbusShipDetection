@@ -92,3 +92,17 @@ networks:
 ### Origin Community Distribution
 OCD is platform as a service PaaS provided by Red Hat.Use **[OCD](https://www.okd.io/)** to manage containers and load balance.OCD(Origin Community Distribution) provides a complete open source container application platform,which is built on **[Kubernetes](https://kubernetes.io/)**
 
+First,install the Openshift origin.Use web-rs.yaml to create a replica of web pods and db-pod.yml to create a MongoDB pod,which is like below.
+
+![openshift]()
+
+Use db-service.yaml to create a MongoDB service to make sure the web pod and database pod can connect with each other.The web-service.yaml is used to create the service to expose the web pod to external IP.Here we use NodePort.If you deploy the website on the server and the the cloud provide Load-Balancer service.Please use that.Then create a router to the web-pod.
+
+### Load test
+Here we use siege tool to simply test the website.We will simulate a High-Concurrency situation with 100 users.
+```
+siege -d 10 -c 100 http://168.122.216.101
+```
+We get the result as below.There are total 29511 hits and availability is 100%.The transaction rate can nearly access 300,which means our website can basicly meet our requirments.
+
+![test_output]()
