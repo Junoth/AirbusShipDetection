@@ -50,9 +50,7 @@ apt-get install build-essential python
 ```
 
 ### Database
-Use **[MongoDB](https://www.mongodb.com/)** as the main database for the website.MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
-
-You can go to the MongoDB website to download and install the MongoDB database.Use /data/db as the storage directory.
+Use **[MongoDB](https://www.mongodb.com/)** as the main database for the website.MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.You can go to the MongoDB website to download and install the MongoDB database.Use /data/db as the storage directory.
 
 ### Docker
 Use **[Docker](https://www.docker.com/)** to deploy the website on server.docker is a popular application to help finish agile operations and integrated container security for legacy and cloud-native applications.It helps to deploy quickly and safely.
