@@ -55,6 +55,40 @@ Use **[MongoDB](https://www.mongodb.com/)** as the main database for the website
 You can go to the MongoDB website to download and install the MongoDB database.Use /data/db as the storage directory.
 
 ### Docker
-To deploy on the server, we use **[Docker](https://www.docker.com/)** to make image of the website.docker is a popular application to help finish agile operations and integrated container security for legacy and cloud-native applications.It helps to deploy the website system quickly and safely.
+Use **[Docker](https://www.docker.com/)** to deploy the website on server.docker is a popular application to help finish agile operations and integrated container security for legacy and cloud-native applications.It helps to deploy quickly and safely.
 
-After building the image,you just need to install docker on the server.Download the image and create the container.
+Here we use the [tiangolo/uwsgi-nginx-flask](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/) image in the docker hub to make our own image.The Dockerfile is like below:
+```
+FROM tiangolo/uwsgi-nginx-flask:python2.7
+COPY requirements.txt requirements.txt 
+RUN pip install --no-cache-dir -r requirements.txt
+COPY ./app /app
+```
+
+MongoDB is also deployed by docker by using the official docker image [mongo](https://hub.docker.com/_/mongo/)
+
+Because of the sandbox mechanism,we need to use bridge network to connect web and mongodb.You can use docker-compose file directly to make containers.Use volumes to bind container with the local file.
+```
+version: '3'
+
+services:
+  web:
+    image: web_v2:latest
+    ports:
+      - 8080:80
+    networks:
+      - my-net
+    volumes:
+      - /Users/junoth/Dropbox/EC601/my_flask/app:/app
+  mongodb:
+    image: mongo
+    networks:
+      - my-net
+    ports:
+      - 27017:27017
+    volumes:
+      - /data/db:/data/db
+networks:
+   my-net:
+    driver: bridge   
+```
