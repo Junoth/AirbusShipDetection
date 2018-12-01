@@ -67,7 +67,7 @@ COPY ./app /app
 
 MongoDB is also deployed by docker by using the official docker image [mongo](https://hub.docker.com/_/mongo/)
 
-Because of the sandbox mechanism,we need to use bridge network to connect web and mongodb.You can use docker-compose file directly to make containers.Use volumes to bind container with the local file.
+Because of the sandbox mechanism,we need to use bridge network to connect web and mongodb.You can use docker-compose file directly to make containers.You can also use volumes to bind container with the local file.
 ```
 version: '3'
 
@@ -78,16 +78,12 @@ services:
       - 8080:80
     networks:
       - my-net
-    volumes:
-      - /Users/junoth/Dropbox/EC601/my_flask/app:/app
   mongodb:
     image: mongo
     networks:
       - my-net
     ports:
       - 27017:27017
-    volumes:
-      - /data/db:/data/db
 networks:
    my-net:
     driver: bridge   
