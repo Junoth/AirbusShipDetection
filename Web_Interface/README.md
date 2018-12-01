@@ -92,7 +92,7 @@ OCD is platform as a service PaaS provided by Red Hat.Use **[OCD](https://www.ok
 
 First,install the Openshift origin.Use web-rs.yaml to create a replica of web pods and db-pod.yml to create a MongoDB pod,which is like below.
 
-![openshift]()
+![openshift](https://raw.githubusercontent.com/Junoth/AirbusShipDetection/master/Web_Interface/images/openshift.png)
 
 Use db-service.yaml to create a MongoDB service to make sure the web pod and database pod can connect with each other.The web-service.yaml is used to create the service to expose the web pod to external IP.Here we use NodePort.If you deploy the website on the server and the the cloud provide Load-Balancer service.Please use that.Then create a router to the web-pod.
 
