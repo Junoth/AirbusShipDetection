@@ -103,4 +103,4 @@ siege -d 10 -c 100 http://168.122.216.101
 ```
 We get the result as below.There are total 29511 hits and availability is 100%.The transaction rate can nearly access 300,which means our website can basicly meet our requirments.
 
-![test_output]()
+![test_output](https://raw.githubusercontent.com/Junoth/AirbusShipDetection/master/Web_Interface/images/Loadtest.png)
