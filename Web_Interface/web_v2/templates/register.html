@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style type=text/css>
+      html,
+      body {
+        height: 100%;
+      }
+      
+      body {
+        background-image: url(static/img/bg.jpg);
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+      
+      .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+      }
+      .form-signin .checkbox {
+        font-weight: 400;
+      }
+      .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .form-signin .form-control:focus {
+        z-index: 2;
+      }
+      .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/image/favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  </head>
+
+  <body class="text-center">
+      <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="/home">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/introduction">Introduction<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/document">Document</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/download">Download</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+    <form class="form-signin" action="{{ url_for("register") }}" method="POST">
+      <img class="d-block mx-auto mb-4" src="static/image/cruise.svg" alt="" width="72" height="72">
+      <h1 class="h1 mb-3 font-weight-normal text-white">Sign up</h1>
+      <div class="form-group">
+          <label for="username" class="sr-only">Username</label>
+          <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+      </div>
+      <div class="form-group">
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="example@example.com" required autofocus>
+      </div>
+      <div class="form-group"> 
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+      </div>
+      <div class="form-group"> 
+          <label for="confirmPassword" class="sr-only">Confirm</label>
+          <input type="password" id="confirm" name="confirm" class="form-control" placeholder="Confirm" required>
+      </div>
+      </br>
+      <button class="btn btn-lg btn-outline-light btn-block" type="submit">Sign up</button>
+      <p class="mt-5 mb-3 text-muted text-white">&copy; 2018</p>
+    </form>
+  </body>
+</html>
